@@ -17,7 +17,7 @@ class TrailsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create trail" do
     assert_difference("Trail.count") do
-      post trails_url, params: { trail: { address: @trail.address, average_rating: @trail.average_rating, city: @trail.city, country: @trail.country, creator_id: @trail.creator_id, description: @trail.description, difficulty: @trail.difficulty, elevation_gain: @trail.elevation_gain, image_url: @trail.image_url, latitude: @trail.latitude, length: @trail.length, longitude: @trail.longitude, name: @trail.name, park_id: @trail.park_id, route_type: @trail.route_type, state: @trail.state, zip_code: @trail.zip_code } }
+      post trails_url, params: { trail: { address: @trail.address, average_rating: @trail.average_rating, city: @trail.city, country: @trail.country, description: @trail.description, difficulty: @trail.difficulty, elevation_gain: @trail.elevation_gain, image_url: @trail.image_url, latitude: @trail.latitude, length: @trail.length, longitude: @trail.longitude, name: @trail.name, park_id: @trail.park_id, route_type: @trail.route_type, state: @trail.state, zip_code: @trail.zip_code } }
     end
 
     assert_redirected_to trail_url(Trail.last)
@@ -34,7 +34,7 @@ class TrailsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update trail" do
-    patch trail_url(@trail), params: { trail: { address: @trail.address, average_rating: @trail.average_rating, city: @trail.city, country: @trail.country, creator_id: @trail.creator_id, description: @trail.description, difficulty: @trail.difficulty, elevation_gain: @trail.elevation_gain, image_url: @trail.image_url, latitude: @trail.latitude, length: @trail.length, longitude: @trail.longitude, name: @trail.name, park_id: @trail.park_id, route_type: @trail.route_type, state: @trail.state, zip_code: @trail.zip_code } }
+    patch trail_url(@trail), params: { trail: { address: @trail.address, average_rating: @trail.average_rating, city: @trail.city, country: @trail.country, description: @trail.description, difficulty: @trail.difficulty, elevation_gain: @trail.elevation_gain, image_url: @trail.image_url, latitude: @trail.latitude, length: @trail.length, longitude: @trail.longitude, name: @trail.name, park_id: @trail.park_id, route_type: @trail.route_type, state: @trail.state, zip_code: @trail.zip_code } }
     assert_redirected_to trail_url(@trail)
   end
 

@@ -16,7 +16,6 @@ class CreateTrails < ActiveRecord::Migration[8.0]
       t.string :zip_code
       t.decimal :average_rating
       t.string :image_url
-      t.integer :creator_id
       t.integer :park_id
 
       t.timestamps
