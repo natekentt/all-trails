@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @trail_image %>
+
+<div>
+  <%= link_to "Edit this trail image", edit_trail_image_path(@trail_image) %> |
+  <%= link_to "Back to trail images", trail_images_path %>
+
+  <%= button_to "Destroy this trail image", @trail_image, method: :delete %>
+</div>

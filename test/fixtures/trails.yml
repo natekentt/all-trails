@@ -1,0 +1,39 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  difficulty: 1
+  length: 9.99
+  elevation_gain: 1
+  route_type: 1
+  latitude: 9.99
+  longitude: 9.99
+  address: MyString
+  city: MyString
+  state: MyString
+  country: MyString
+  zip_code: MyString
+  average_rating: 9.99
+  image_url: MyString
+  creator_id: 1
+  park_id: 1
+
+two:
+  name: MyString
+  description: MyText
+  difficulty: 1
+  length: 9.99
+  elevation_gain: 1
+  route_type: 1
+  latitude: 9.99
+  longitude: 9.99
+  address: MyString
+  city: MyString
+  state: MyString
+  country: MyString
+  zip_code: MyString
+  average_rating: 9.99
+  image_url: MyString
+  creator_id: 1
+  park_id: 1

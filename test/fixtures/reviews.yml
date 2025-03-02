@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rating: 1
+  comment: MyText
+  user: one
+  trail: one
+  date: 2025-03-02
+
+two:
+  rating: 1
+  comment: MyText
+  user: two
+  trail: two
+  date: 2025-03-02
