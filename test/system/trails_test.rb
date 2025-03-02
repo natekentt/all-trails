@@ -18,7 +18,6 @@ class TrailsTest < ApplicationSystemTestCase
     fill_in "Average rating", with: @trail.average_rating
     fill_in "City", with: @trail.city
     fill_in "Country", with: @trail.country
-    fill_in "Creator", with: @trail.creator_id
     fill_in "Description", with: @trail.description
     fill_in "Difficulty", with: @trail.difficulty
     fill_in "Elevation gain", with: @trail.elevation_gain
@@ -45,7 +44,6 @@ class TrailsTest < ApplicationSystemTestCase
     fill_in "Average rating", with: @trail.average_rating
     fill_in "City", with: @trail.city
     fill_in "Country", with: @trail.country
-    fill_in "Creator", with: @trail.creator_id
     fill_in "Description", with: @trail.description
     fill_in "Difficulty", with: @trail.difficulty
     fill_in "Elevation gain", with: @trail.elevation_gain

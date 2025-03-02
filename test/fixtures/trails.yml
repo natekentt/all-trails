@@ -16,7 +16,6 @@ one:
   zip_code: MyString
   average_rating: 9.99
   image_url: MyString
-  creator_id: 1
   park_id: 1
 
 two:
@@ -35,5 +34,4 @@ two:
   zip_code: MyString
   average_rating: 9.99
   image_url: MyString
-  creator_id: 1
   park_id: 1
