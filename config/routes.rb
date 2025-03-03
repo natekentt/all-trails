@@ -1,8 +1,21 @@
 Rails.application.routes.draw do
-  resources :reviews
-  resources :trail_images
-  resources :trails
-  resources :users
+  # Defines the root path route ("/")
+  root 'pages#index'
+
+  namespace :api do
+    namespace :v1 do
+      resources :reviews, only: [:create, :destroy]
+      #resources :trail_images
+      resources :trails, param: :slug
+      resources :users
+    end
+  end
+
+  # once we use react router, it allows us to handle routing to our react component
+  # without messing up ruby api routing
+  get '*path', to: 'pages#index', via: :all
+
+  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -13,6 +26,5 @@ Rails.application.routes.draw do
   # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
-  # Defines the root path route ("/")
-  # root "posts#index"
+  
 end
